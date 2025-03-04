@@ -35,23 +35,17 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-  
+    height: 90vh;
     flex-direction: column;
-  
-  
-
 }
 
 
 .main{
     text-align: center;
-   
 }
 
 .image-area{
    margin: 20px;
-
 }
 
 .h1-area{
@@ -59,18 +53,18 @@ body{
     margin-bottom: 50px;
     padding-left: 10px;
     padding-right: 10px;
-   
-
-  
     font-family: 'YeongamWolchulsan.ttf';
-  animation: motion 0.4s linear 0s infinite alternate;  
-  color: white;
-  text-shadow: -2px 0 #6d7caa, 0 2px #6d7caa, 2px 0 #6d7caa, 0 -2px #6d7caa;
+     animation: motion 0.5s linear 0s infinite alternate;  
+    color: white;
+    text-shadow: -2px 0 #6d7caa, 0 2px #6d7caa, 2px 0 #6d7caa, 0 -2px #6d7caa;
 }
-
+a{
+    padding-left: 20px;
+    color: white;
+}
 @keyframes motion {
 	0% {margin-top: 0px;}
-	100% {margin-top: 10px;}
+	100% {margin-top: 5px;}
 }
 
 .h1-section{
@@ -91,7 +85,6 @@ float: right;
 
 .btn-area{
     margin-top: 60px;
-   
     padding: 20px;
 }
 
@@ -103,9 +96,6 @@ float: right;
     height: 40px;
     border-radius: 20px;
     margin: 20px;
-
-   
-
 }
 
 #btn:hover{
@@ -123,7 +113,29 @@ float: right;
     
 }
 
- 
+.footers{
+    background-color:rgb(167, 206, 239);
+    padding: 20px;
+    
+}
+.product{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+
+}
+.product div {
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-family:'YeongamWolchulsan.ttf' ;
+    text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+}
+.end{
+    display: flex;
+    justify-content: end;
+    font-family:'YeongamWolchulsan.ttf' ;
+    font-size: 10px;
+}
 @media screen and (max-width: 48rem){
     .container{
        bottom: 0;
@@ -152,13 +164,15 @@ float: right;
 
 .h1-area{
     font-size: 20px;
-  
    padding:15px;
 }
 
 .btn-area{
-
 display: flex;
 bottom: 0;
+}
+
+.product div {
+ padding: 10px;
 }
 }
